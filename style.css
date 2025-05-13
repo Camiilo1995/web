@@ -1,0 +1,218 @@
+
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/* Estilos para los elementos dentro (ejemplo) */
+.top-bar .logo,
+.top-bar .notice,
+.top-bar .cta-button {
+    text-align: center;
+}
+.cta-button{
+    background-color: #f4041c;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+}
+.top-bar {
+    justify-content: space-around;
+}
+.attention-box {
+    background-color: rgba(255, 255, 255, 0.8);;  /* Fondo de atención (color suave de alerta) */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;          /* Centra el contenedor */
+    width: 100%;                /* En pantallas pequeñas ocupa todo el ancho */
+    max-width: 500px;          /* Limita el ancho en pantallas grandes */
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.attention-box h2 {
+    color: #f4041c;  /* Color rojo oscuro para el título */
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.attention-box p {
+    font-size: 1.5rem;
+    color: #050505;
+    margin: 10px 0;
+}
+
+.attention-box strong {
+    font-weight: bold;
+}
+
+.lista {
+    padding-left: 20px;
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #050505;
+}
+
+.lista li {
+    margin: 5px 0;
+}
+
+/* 💻 Para pantallas grandes */
+@media (min-width: 768px) {
+    .attention-box {
+        padding: 30px;
+    }
+    .attention-box h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+.form-box {
+    max-width: 450px;        /* Limita el ancho en pantallas grandes */
+    width: 100%;             /* Hace que ocupe el 100% del contenedor en pantallas pequeñas */
+    margin: 20px auto;       /* Centra el formulario */
+    padding: 5px;
+    margin-right: 7rem;
+    background-color: #f5d104;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    position: fixed;
+    margin-left: auto;
+    right: 0;
+    top: 100px;
+}
+
+.form-box label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.form-box input, 
+.form-box select, 
+.form-box textarea {
+    width: 100%;              /* Hace que los inputs ocupen todo el ancho */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-box input:hover, 
+.form-box select:hover, 
+.form-box textarea:hover {
+    box-shadow: inset 0 0 0 2px #7fa7e7;
+}
+
+.form-box input:focus, 
+.form-box select:focus, 
+.form-box textarea:focus {
+    border: 1px solid #7fa7e7;
+    outline: none; /* esto hace que se vayan los bordes negros y quede solo el borde que ponga */
+}
+
+.form-box input[type="text"], 
+.form-box input[type="tel"], 
+.form-box input[type="email"], 
+.form-box input[type="number"] {
+    font-size: 1rem;
+}
+
+.form-box .textArea {
+    font-size: 1rem;
+    height: 90px;
+    resize:none;         /* Permite redimensionar la altura de la textarea */
+}
+
+.form-box .btn-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.form-box .button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: white; /* Color del botón */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #050505;
+    cursor: pointer;
+}
+
+.form-box .button:hover {
+    background-color: #c7c6c4;
+    box-shadow: inset 0 0 0 2px #7fa7e7;
+}
+
+.form-box .button:focus {
+    border: 1px solid #7fa7e7;
+    background-color: #c7c6c4;
+    box-shadow: inset 0 0 0 2px #7fa7e7;
+    outline: none;
+}
+
+.form-box .button-form {
+    padding: 15px;
+    background-color: #11990cbb;
+    border: 1px solid #070707;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form-box .button-form:hover {
+    background-color: #0f780bbb;
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 768px) {
+    .form-box {
+        width: 60%;  /* Hace que el formulario sea más estrecho en pantallas grandes */
+    }
+
+    .form-box h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .form-box p {
+        font-size: 1.2rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .form-box label {
+        font-size: 1.1rem;
+    }
+
+    .form-box .button-form {
+        font-size: 1.4rem;
+    }
+}
+
+.form{
+    background-color: white;
+    padding: 10px;
+}
+.parrafo{
+    margin: 20px;
+    font-size: 0.5rem;
+}
+
+
